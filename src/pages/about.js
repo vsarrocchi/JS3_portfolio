@@ -1,14 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 import Header from "../components/header"
 import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <div>
-      <Link to="/contact/">Contact</Link>
-      <Header headerText="Hello Gatsby!" />
-      <p>What a world.</p>
+    <div style={{ color: `teal` }}>
+      <Header headerText="About Gatsby"/>
+      <Header headerText="It's pretty cool" />
+      <p>Such wow. Very React.</p>
     </div>
   </Layout>
 )

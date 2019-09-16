@@ -5,10 +5,10 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <div>
-      <Link to="/contact/">Contact</Link>
-      <Header headerText="Hello Gatsby!" />
-      <p>What a world.</p>
+    <div style={{ color: `teal` }}>
+      <Link to="/">Home</Link>
+      <Header headerText="Contact" />
+      <p>Send us a message!</p>
     </div>
   </Layout>
 )
