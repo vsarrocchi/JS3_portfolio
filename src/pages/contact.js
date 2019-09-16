@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <div style={{ color: `teal` }}>
+    <div>
       <Link to="/">Home</Link>
       <Header headerText="Contact" />
       <p>Send us a message!</p>
