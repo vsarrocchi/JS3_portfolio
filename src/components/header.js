@@ -1,5 +1,7 @@
 import React from "react"
 import {Link} from "gatsby"
+import headerStyles from "./header.module.css"
+// import logo from "../images/logo.png"
 
 const ListLink = props => (
   <li>
@@ -9,7 +11,10 @@ const ListLink = props => (
   
 export default({ children }) => {
     return (
-        <div>
+        <div className={headerStyles.header}>
+            {/* <div className={headerStyles.logo}>
+                <img src={logo} alt="logo" />
+            </div> */}
             <ul>
                 <ListLink to="/">Home</ListLink>
                 <ListLink to="/about">About</ListLink>
