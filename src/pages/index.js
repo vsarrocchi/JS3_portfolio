@@ -5,20 +5,22 @@ import Container from "../components/container"
 import logo from "../images/logo.png"
 import homeImage from "../images/home-image.png"
 
-export default ({ data }) => {
+export default () => {
   return (
     <div>
       <Header />
       <Container>
+        <div>
           <div>
             <img src={logo} alt="logo" />
           </div>
           <p>Hello! I'm</p>
           <h1>Valesca Sarrocchi</h1>
           <h2>FrontEnd Developer Student</h2>
-          <div>
-            <img src={homeImage} alt="logo" />
-          </div>
+        </div>
+        <div>
+          <img src={homeImage} alt="logo" />
+        </div>
       </Container>
       {/* post code */}
       {/* <Container>
