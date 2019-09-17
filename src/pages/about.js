@@ -1,14 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Header from "../components/header"
+import TitleOne from "../components/title-one"
 import Layout from "../components/layout"
+import Header from "../components/header"
 
 export default ({ data }) => (
   <Layout>
+    <Header />
     <h1>About {data.site.siteMetadata.title}</h1>
     <div>
-      <Header headerText="About Gatsby"/>
-      <Header headerText="It's pretty cool" />
+      <TitleOne titleOneText="About Gatsby"/>
+      <TitleOne titleOneText="It's pretty cool" />
       <p>Such wow. Very React.</p>
     </div>
   </Layout>

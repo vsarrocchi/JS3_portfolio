@@ -7,8 +7,7 @@ export default () => (
   <Layout>
     <Header />
     <div>
-      <TitleOne titleOneText="Contact" />
-      <p>Send us a message!</p>
+      <TitleOne titleOneText="Portfolio" />
     </div>
   </Layout>
 )
