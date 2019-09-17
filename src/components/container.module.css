@@ -1,4 +1,8 @@
-/* .container {
-    margin: 3rem auto;
-    max-width: 600px;
-} */
+@media (min-width: 768px) {
+    .container {
+        border: 1px solid black;
+        width: 1024px;
+        margin: 93px auto 0 auto;
+        /* min-height: 100vh; */
+    }
+}

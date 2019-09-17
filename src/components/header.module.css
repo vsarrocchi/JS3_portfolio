@@ -4,21 +4,6 @@
     display: none;
 }
 
-ul {
-    /* border: 1px solid black; */
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
 /* .logo {
     border: 1px solid black;
     width: 10%;
@@ -45,18 +30,16 @@ a {
         /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
     }
 
-    ul {
+    .header ul {
         display: flex;
         align-items: center;
     }
 
-    li {
-        margin: 20px;
+    .header ul li {
+        margin: 25px;
+        font-size: 18px;
     }
 
-    a {
-        color: black;
-    }
     /* .logo {
         width: 10%;
     }

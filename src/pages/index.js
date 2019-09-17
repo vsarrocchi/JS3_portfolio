@@ -1,15 +1,27 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
+// import { Link, graphql } from "gatsby"
 import Header from "../components/header"
+import Container from "../components/container"
+import logo from "../images/logo.png"
+import homeImage from "../images/home-image.png"
 
 export default ({ data }) => {
   return (
-    <Layout>
-    <Header />
-      <div>
-        <h1>Amazing Pandas Eating Things</h1>
-
+    <div>
+      <Header />
+      <Container>
+          <div>
+            <img src={logo} alt="logo" />
+          </div>
+          <p>Hello! I'm</p>
+          <h1>Valesca Sarrocchi</h1>
+          <h2>FrontEnd Developer Student</h2>
+          <div>
+            <img src={homeImage} alt="logo" />
+          </div>
+      </Container>
+      {/* post code */}
+      {/* <Container>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
@@ -20,8 +32,8 @@ export default ({ data }) => {
           </div>
         ))}
 
-      </div>
-    </Layout>
+      </Container> */}
+    </div>
   )
 }
 

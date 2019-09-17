@@ -1,19 +1,21 @@
 import React from "react"
 import { graphql } from "gatsby"
 import TitleOne from "../components/title-one"
-import Layout from "../components/layout"
 import Header from "../components/header"
+import Container from "../components/container"
 
 export default ({ data }) => (
-  <Layout>
+  <div>
     <Header />
-    <h1>About {data.site.siteMetadata.title}</h1>
-    <div>
-      <TitleOne titleOneText="About Gatsby"/>
-      <TitleOne titleOneText="It's pretty cool" />
-      <p>Such wow. Very React.</p>
-    </div>
-  </Layout>
+    <Container>
+      <h1>About {data.site.siteMetadata.title}</h1>
+      <div>
+        <TitleOne titleOneText="About Gatsby"/>
+        <TitleOne titleOneText="It's pretty cool" />
+        <p>Such wow. Very React.</p>
+      </div>
+    </Container>
+  </div>
 )
 
 export const query = graphql`
