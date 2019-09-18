@@ -1,0 +1,28 @@
+/* mobil layout */
+.footer {
+    border: 1px solid black;
+    display: none;
+}
+
+/* desktop layout */
+@media (min-width: 768px) {
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scrollTop {
+        font-size: 3em;
+    }
+
+    .scrollTop:hover {
+        cursor: pointer;
+        color: #797676;
+    }
+}
