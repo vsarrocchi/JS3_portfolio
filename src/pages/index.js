@@ -1,8 +1,12 @@
 import React from "react"
 // import { Link, graphql } from "gatsby"
-import Header from "../components/header"
-import Footer from "../components/footer"
+import { Helmet } from "react-helmet"
 import Container from "../components/container"
+import Header from "../components/header"
+import About from "../components/about"
+import Portfolio from "../components/portfolio"
+import Contact from "../components/contact"
+import Footer from "../components/footer"
 import indexStyles from "./index.module.css"
 import logo from "../images/logo.png"
 import homeImage from "../images/home-image.png"
@@ -10,6 +14,7 @@ import homeImage from "../images/home-image.png"
 export default () => {
   return (
     <div>
+      <Helmet />
       <Header />
       <Container>
         <div className={indexStyles.indexContainer}>
@@ -25,6 +30,9 @@ export default () => {
             <img className={indexStyles.homeImage} src={homeImage} alt="home" />
           </div>
         </div>
+        <About />
+        <Portfolio />
+        <Contact />
       </Container>
       <Footer />      
       {/* post code */}

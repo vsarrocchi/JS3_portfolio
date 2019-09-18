@@ -13,10 +13,10 @@ export default({ children }) => {
         <div className={headerStyles.header}>
             <ul>
                 <ListLink to="/">Home</ListLink>
-                <ListLink to="/about">About</ListLink>
-                <ListLink to="/portfolio">Portfolio</ListLink>
-                <ListLink to="/contact">Contact</ListLink>
-                <ListLink to="/my-files">My Files</ListLink>
+                <ListLink to="#about">About</ListLink>
+                <ListLink to="#portfolio">Portfolio</ListLink>
+                <ListLink to="#contact">Contact</ListLink>
+                {/* <ListLink to="/my-files">My Files</ListLink> */}
             </ul>
             {children}
         </div>

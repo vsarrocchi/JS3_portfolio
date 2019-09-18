@@ -5,7 +5,7 @@ export default({ children }) => {
     return (
         <div className={footerStyles.footer}>
             <div>
-                <a href="#" class="scrollTop">
+                <a href="/" className={footerStyles.scrollTop}>
                     <i class="fas fa-angle-up"></i>
                 </a>
             </div>
