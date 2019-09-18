@@ -6,7 +6,7 @@ export default({ children }) => {
         <div className={footerStyles.footer}>
             <div>
                 <a href="/" className={footerStyles.scrollTop}>
-                    <i class="fas fa-angle-up"></i>
+                    <i className="fas fa-angle-up"></i>
                 </a>
             </div>
             <p>Built by Valesca Sarrocchi</p>
