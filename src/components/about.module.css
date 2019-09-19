@@ -1,18 +1,9 @@
 @media (min-width: 768px) {
-    .homeContainer {
+    .aboutContainer {
         border: 1px solid black;
         min-height: 100vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    .homeImage {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .homeColumn1,
-    .homeColumn2 {
-        width: 100%;
     }
 }

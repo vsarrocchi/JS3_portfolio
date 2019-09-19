@@ -1,23 +1,8 @@
 import React from "react"
-// import { graphql } from "gatsby"
-// import TitleOne from "/components/title-one"
+import aboutStyles from "./about.module.css"
 
 export default () => (
-  <div id="about">
-      {/* <h1>About {data.site.siteMetadata.title}</h1> */}
-      <div>
-        {/* <TitleOne titleOneText="About"/> */}
-        <h1>About</h1>
-      </div>
+  <div className={aboutStyles.aboutContainer} id="about">
+      <h1>About</h1>
   </div>
 )
-
-// export const query = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `

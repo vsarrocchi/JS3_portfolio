@@ -1,13 +1,14 @@
 import React from "react"
 import footerStyles from "./footer.module.css"
+import {Link} from "gatsby"
   
 export default({ children }) => {
     return (
         <div className={footerStyles.footer}>
             <div>
-                <a href="/" className={footerStyles.scrollTop}>
+                <Link to="/" className={footerStyles.scrollTop}>
                     <i className="fas fa-angle-up"></i>
-                </a>
+                </Link>
             </div>
             <p>Built by Valesca Sarrocchi</p>
             {children}

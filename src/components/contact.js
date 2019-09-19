@@ -1,10 +1,8 @@
 import React from "react"
-// import TitleOne from "/components/title-one"
+import contactStyles from "./contact.module.css"
 
 export default () => (
-  <div id="contact">
+  <div className={contactStyles.contactContainer} id="contact">
       <h1>Contact</h1>
-      {/* <TitleOne titleOneText="Contact" /> */}
-      <p>Send us a message!</p>
   </div>
 )

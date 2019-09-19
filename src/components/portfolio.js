@@ -1,9 +1,8 @@
 import React from "react"
-// import TitleOne from "/components/title-one"
+import portfolioStyles from "./portfolio.module.css"
 
 export default () => (
-  <div id="portfolio">
+  <div className={portfolioStyles.portfolioContainer} id="portfolio">
       <h1>Portfolio</h1>
-      {/* <TitleOne titleOneText="Portfolio" /> */}
   </div>
 )

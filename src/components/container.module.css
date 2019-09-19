@@ -1,8 +1,7 @@
 @media (min-width: 768px) {
     .container {
-        /* border: 1px solid black; */
         width: 1024px;
-        margin: 93px auto 0 auto;
-        padding-bottom: 10rem;
+        margin: auto;
+        /* margin: 93px auto 0 auto; */
     }
 }
