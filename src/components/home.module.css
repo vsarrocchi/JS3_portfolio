@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-    .indexContainer {
+    .homeContainer {
         border: 1px solid black;
         display: flex;
         justify-content: space-between;
@@ -11,8 +11,8 @@
         height: 100%;
     }
     
-    .indexColumn1,
-    .indexColumn2 {
+    .homeColumn1,
+    .homeColumn2 {
         /* border: 1px solid black; */
         width: 100%;
     }
