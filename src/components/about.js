@@ -3,7 +3,7 @@ import React from "react"
 // import TitleOne from "/components/title-one"
 
 export default () => (
-  <div>
+  <div id="about">
       {/* <h1>About {data.site.siteMetadata.title}</h1> */}
       <div>
         {/* <TitleOne titleOneText="About"/> */}
