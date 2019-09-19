@@ -11,7 +11,11 @@ import Footer from "../components/footer"
 export default () => {
   return (
     <div>
-      <Helmet />
+      <Helmet>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"></link>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="/script.js"></script>
+      </Helmet>
       <Header />
       <Container>
         <Home />
@@ -19,7 +23,7 @@ export default () => {
         <Portfolio />
         <Contact />
       </Container>
-      <Footer />      
+      <Footer />
     </div>
   )
 }

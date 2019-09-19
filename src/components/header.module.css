@@ -16,7 +16,7 @@
 
 /* desktop layout */
 @media (min-width: 768px) {
-    .header {
+    .headerBox {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -30,12 +30,12 @@
         /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
     }
 
-    .header ul {
+    .headerBox ul {
         display: flex;
         align-items: center;
     }
 
-    .header ul li {
+    .headerBox ul li {
         margin: 25px;
         font-size: 18px;
     }

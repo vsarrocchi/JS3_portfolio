@@ -1,6 +1,7 @@
 @media (min-width: 768px) {
     .container {
-        width: 1024px;
+        /* width: 1024px; */
+        width: 70%;
         margin: auto;
         /* margin: 93px auto 0 auto; */
     }
