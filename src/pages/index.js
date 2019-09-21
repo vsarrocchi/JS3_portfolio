@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Container from "../components/container"
+// import Container from "../components/container"
 import Header from "../components/header"
 import Home from "../components/home"
 import About from "../components/about"
@@ -17,12 +17,12 @@ export default () => {
         <script src="/script.js"></script>
       </Helmet>
       <Header />
-      <Container>
+      {/* <Container> */}
         <Home />
         <About />
         <Portfolio />
         <Contact />
-      </Container>
+      {/* </Container> */}
       <Footer />
     </div>
   )

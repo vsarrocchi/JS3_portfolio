@@ -1,9 +1,8 @@
 @media (min-width: 768px) {
     .contactContainer {
         /* border: 1px solid black; */
+        padding: 40px 0;
         min-height: 100vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        text-align: center;
     }
 }

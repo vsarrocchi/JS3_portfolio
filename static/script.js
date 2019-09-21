@@ -7,14 +7,12 @@ $(document).ready(function () {
         if (scroll > position) {
             // console.log('scrollDown');
             $("#main-header").css({
-                "opacity": "0",
                 "transform": "translateY(-100px)",
-                "transition": "all 0.7s ease"
+                "transition": "all 0.5s ease"
             });
         } else {
             // console.log('scrollUp'); 
             $("#main-header").css({
-                "opacity": "1",
                 "transform": "translateY(0)"
             });
         }
