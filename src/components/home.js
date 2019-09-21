@@ -1,14 +1,14 @@
 import React from "react"
 import homeStyles from "./home.module.css"
-import logo from "../images/logo.png"
-import homeImage from "../images/home-image.png"
+import logo from "../images/logo3.png"
+// import homeImage from "../images/home-image.png"
 
 export default () => (
     <div className={homeStyles.homeContainer}>
       <div className={homeStyles.homeBox}>
         <div className={homeStyles.homeColumn1}>
           <div className={homeStyles.homeInfo}>
-            <div>
+            <div className={homeStyles.logo}>
               <img src={logo} alt="logo" />
             </div>
             <p>Hello! I'm</p>
@@ -16,9 +16,9 @@ export default () => (
             <h2>FrontEnd Developer Student</h2>
           </div>
         </div>
-        <div className={homeStyles.homeColumn2}>
+        {/* <div className={homeStyles.homeColumn2}>
           <img className={homeStyles.homeImage} src={homeImage} alt="home" />
-        </div>
+        </div> */}
       </div>
     </div>
 )

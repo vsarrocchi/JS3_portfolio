@@ -3,6 +3,35 @@
         /* border: 1px solid black; */
         padding: 40px 0;
         min-height: 100vh;
-        text-align: center;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2EFE8;
+        /* background-image: url("../images/valparaiso.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        opacity: 0.9; */
+    }
+
+    .aboutBox {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .profilImage {
+        /* border: 1px solid black; */
+        display: flex;
+        width: 20%;
+    }
+    
+    .profilImage img {
+        border-radius: 500px;
+        width: 100%;
     }
 }

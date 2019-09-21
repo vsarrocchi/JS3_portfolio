@@ -4,6 +4,13 @@
         min-height: 100vh;
         display: flex;
         align-items: center;
+        background-image: url("../images/home-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        z-index: -10;
+        /* opacity: 0.5; */
     }
 
     .homeBox {
@@ -11,6 +18,14 @@
         margin: auto;
         display: flex;
         align-items: center;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .logo img {
+        width: 100%;
     }
 
     .homeImage {

@@ -11,7 +11,8 @@ html {
 body {
     margin: 0;
     padding: 0;
-    color: #333;
+    /* color: #333; */
+    color: #373636;
     font-family: 'Quicksand', sans-serif;
     /* background-color: #F2EFE8; */
     /* background-color: #8B1ADC; */

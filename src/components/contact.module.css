@@ -1,8 +1,32 @@
 @media (min-width: 768px) {
     .contactContainer {
-        /* border: 1px solid black; */
-        padding: 40px 0;
+        /* padding: 40px 0; */
         min-height: 100vh;
         text-align: center;
+        background-color: #252628;
+    }
+
+    .contactBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactForm {
+        width: 45%;
+        border: 1px solid white;
+    }
+
+    /* .contactForm form {
+    } */
+
+    .contactMap {
+        display: flex;
+        width: 55%;
+        height: 100vh;
+    }
+
+    .contactMap iframe {
+        width: 100%;
     }
 }
