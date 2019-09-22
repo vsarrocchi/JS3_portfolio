@@ -5,36 +5,21 @@ export default () => (
     <div className={contactStyles.contactContainer} id="contact">
         <div className={contactStyles.contactBox}>
             <div className={contactStyles.contactForm}>
-                <h1>Contact me</h1>
-                <form id="contact">
-                    <ul>
-                        <li>
-                            <input placeholder="Name" type="text" name="name" /> 
-                            <label></label>
-                        </li>
-                        <li> 
-                            <input placeholder="Email" type="email" name="email" /> 
-                            <label></label>
-                        </li>
-                        <li> 
-                            <input placeholder="Subject" type="text" name="subject" /> 
-                            <label></label>
-                        </li>
-                        <li>
-                            <textarea placeholder="Message" name="msg"></textarea>
-                            <label></label>
-                        </li>
-                        <li className="submit"> 
-                            {/* <input type="hidden" name="ip" value="85.226.138.151"></input> */}
-                            <input id="submit" type="submit" value="SEND"/>
-                        </li>
-                    </ul>
+                <form>
+                    <h1 className={contactStyles.title}>Contact me</h1>
+                    <div className={contactStyles.row}>
+                        <input className={contactStyles.input1} placeholder="Name" type="text" name="name" /> 
+                        <input className={contactStyles.input2} placeholder="Email" type="email" name="email" />
+                    </div>
+                    <input className={contactStyles.input3} placeholder="Subject" type="text" name="subject" />
+                    <textarea className={contactStyles.textArea} placeholder="Message" name="msg"></textarea>
+                    <input className={contactStyles.submitBtn} id="submit" type="submit" value="SEND"/>
                 </form>
             </div>
-            <div className={contactStyles.contactMap}>
-                <iframe title="sverige karta" 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7737117.882063874!2d8.441152656484281!3d61.7420879665662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb2396d35f0f1%3A0x22b8eba28dad6f62!2sSverige!5e0!3m2!1ssv!2sse!4v1569089411194!5m2!1ssv!2sse">
-                </iframe>
+            <div className={contactStyles.contactMap} id="map">
+                {/* <iframe title="sverige karta" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130266.39963613081!2d17.841971349579072!3d59.32606681413215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1ssv!2sse!4v1569127515725!5m2!1ssv!2sse">
+                </iframe> */}
             </div>
         </div>
     </div>
