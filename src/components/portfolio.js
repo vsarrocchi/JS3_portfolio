@@ -4,7 +4,6 @@ import portfolioStyles from "./portfolio.module.css"
 export default () => (
   <div className={portfolioStyles.portfolioContainer} id="portfolio">
       <div className={portfolioStyles.portfolioBox}>
-          <h1>Portfolio</h1>
           {/* <div className={portfolioStyles.imagesStyle + ' ' + portfolioStyles.portfolioContainer}>
             <img src={"/images/artgallery.png"} alt="art gallery" />
           </div> */}
