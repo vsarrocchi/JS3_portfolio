@@ -1,6 +1,5 @@
 import React from "react"
 import aboutStyles from "./about.module.css"
-import profilImage from "../images/profilbild.jpg"
 // import { useStaticQuery, graphql } from "gatsby"
 
 export default () => {
@@ -19,7 +18,7 @@ return (
         {/* <h1 style={{color : 'white'}}>About</h1> */}
         <div className={aboutStyles.aboutBox}>
             <div className={aboutStyles.profilImage}>
-                <img src={profilImage} alt="profilbild" />
+                <img src={"/images/profilbild.jpg"} alt="profilbild" />
             </div>
         </div>
     </div>

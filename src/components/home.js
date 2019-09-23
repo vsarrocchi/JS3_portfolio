@@ -1,7 +1,5 @@
 import React from "react"
 import homeStyles from "./home.module.css"
-import logo from "../images/logo3.png"
-// import homeImage from "../images/home-image.png"
 
 export default () => (
     <div className={homeStyles.homeContainer}>
@@ -9,7 +7,7 @@ export default () => (
         <div className={homeStyles.homeColumn1}>
           <div className={homeStyles.homeInfo}>
             <div className={homeStyles.logo}>
-              <img src={logo} alt="logo" />
+              <img src={"/images/logo3.png"} alt="logo" />
             </div>
             <p>Hello! I'm</p>
             <h1>Valesca Sarrocchi</h1>
