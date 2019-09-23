@@ -14,9 +14,10 @@
         position: fixed;
         top: 0;
         z-index: 10;
-        background-color: #F2EFE8;
+        /* background-color: #F2EFE8; */
+        background-color: #131415;
         opacity: 0.7;
-        box-shadow: 0px 3px 4px 0px #b1aeae;
+        /* box-shadow: 0px 3px 4px 0px #b1aeae; */
     }
 
     .headerBox ul {
@@ -27,5 +28,9 @@
     .headerBox ul li {
         margin: 25px;
         font-size: 18px;
+    }
+
+    .headerBox ul li a {
+        color: white;        
     }
 }

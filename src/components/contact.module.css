@@ -3,7 +3,8 @@
         /* padding: 40px 0; */
         min-height: 100vh;
         /* text-align: center; */
-        background-color: #F2EFE8;
+        background-color: #252628;
+        clip-path: polygon(0 0, 100% 20%, 100% 85%, 0% 100%);
     }
 
     .contactBox {
@@ -46,6 +47,7 @@
         font-size: 17px;
         font-weight: lighter;
         border: none;
+        background-color: #F2EFE8;
 
         /* transition: transform 0.7s ease-in-out;
         border-bottom: 2px solid #ddd;

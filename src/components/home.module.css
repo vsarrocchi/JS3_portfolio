@@ -4,12 +4,17 @@
         min-height: 100vh;
         display: flex;
         align-items: center;
-        background-image: url("/images/home-background.png");
+        /* background-color: #8B1ADC; */
+        color: white;
+        background-color: #8B1ADC;
+        background: linear-gradient(to right, #252628 0%, #8B1ADC 100%);
+        /* background-image: url("/images/home-background.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        z-index: -10;
+        z-index: -10; */
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
         /* opacity: 0.5; */
     }
 

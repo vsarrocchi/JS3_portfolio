@@ -13,7 +13,7 @@ export default () => {
 //   }
 // `)
 return (
-    <div className={aboutStyles.aboutContainer} id="about">
+    <div data-mult="0.2" data-direction="Y(-" className={aboutStyles.aboutContainer} className="parallax" id="about">
         {/* <h1>{data.site.siteMetadata.title}</h1> */}
         {/* <h1 style={{color : 'white'}}>About</h1> */}
         <div className={aboutStyles.aboutBox}>
