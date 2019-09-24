@@ -1,0 +1,81 @@
+.container {
+    /* border: 1px solid black; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252628;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 85%);
+}
+
+.box {
+    /* border: 1px solid black; */
+    width: 60%;
+    /* min-height: 100vh; */
+    /* padding: 40px; */
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #8B1ADC;
+}
+
+@keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+.bar {
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.bar::before {
+    content: attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+}
+
+/* .bar.front::before {
+    background-color: #ffcc33;
+} */
+
+/* .bar.back::before {
+    background-color: #a6cfe3;
+} */
+
+.bar.learning::before {
+    width: calc(20% - 10px);
+    background-color: #EFC0B8;
+}
+
+.bar.basic::before {
+    width: calc(40% - 10px);
+    background-color: #14618D;
+}
+
+.bar.intermediate::before {
+    width: calc(60% - 10px);
+    background-color: #5DD494;
+}
+
+.bar.advanced::before {
+    width: calc(80% - 10px);
+    background-color: #33305B;
+}
+
+.bar.expert::before {
+    width: calc(100% - 10px);
+    background-color: #FF4256;
+}

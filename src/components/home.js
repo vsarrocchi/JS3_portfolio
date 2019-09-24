@@ -5,18 +5,18 @@ export default () => (
     <div className={homeStyles.homeContainer}>
       <div className={homeStyles.homeBox}>
         <div className={homeStyles.homeColumn1}>
+          <div className={homeStyles.logo}>
+              <img src={"/images/logo4.png"} alt="logo" />
+          </div>
           <div className={homeStyles.homeInfo}>
-            <div className={homeStyles.logo}>
-              <img src={"/images/logo3.png"} alt="logo" />
-            </div>
-            <p>Hello! I'm</p>
+            {/* <p>Hello! I'm</p> */}
             <h1 className={homeStyles.title}>Valesca Sarrocchi</h1>
             <h2>FrontEnd Developer Student</h2>
           </div>
         </div>
-        {/* <div className={homeStyles.homeColumn2}>
-          <img className={homeStyles.homeImage} src={homeImage} alt="home" />
-        </div> */}
+        <div className={homeStyles.homeColumn2}>
+            <img src={"/images/home-image-2.png"} alt="home" />
+        </div>
       </div>
     </div>
 )

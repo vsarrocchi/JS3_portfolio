@@ -2,10 +2,9 @@
     .contact {
         display: flex;
         flex-direction: column;
-        bottom: 0;
-        right: unset;
-        margin: 15px;
+        margin: 15px 15px 15px 0;
         position: fixed;
+        bottom: 0;
     }
 
     .contact i {

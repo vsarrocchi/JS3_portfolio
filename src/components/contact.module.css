@@ -1,12 +1,13 @@
 @media (min-width: 768px) {
     .contactContainer {
+        /* border: 1px solid black; */
         /* padding: 40px 0; */
         min-height: 100vh;
     }
 
     .contactBox {
         background-color: #252628;
-        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 85%);
+        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
         display: flex;
         justify-content: center;
         align-items: center;

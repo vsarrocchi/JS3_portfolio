@@ -1,6 +1,5 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-// import Container from "../components/container"
 import Header from "../components/header"
 import Home from "../components/home"
 import About from "../components/about"
@@ -8,6 +7,7 @@ import Portfolio from "../components/portfolio"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
 import SocialMedia from "../components/socialMedia"
+import Skills from "../components/skills"
 
 export default () => {
   return (
@@ -21,11 +21,10 @@ export default () => {
                 async
                 defer></script>
       </Helmet>
-      {/* <Container>
-      </Container> */}
       <Header />
       <Home />
       <About />
+      <Skills />
       <Portfolio />
       <Contact />
       <Footer />
