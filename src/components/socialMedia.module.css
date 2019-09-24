@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+        right: unset;
+        margin: 15px;
+        position: fixed;
+    }
+
+    .contact i {
+        padding: 1rem 2rem;
+        color: #8B1ADC;
+    }
+
+    .contact i:hover {
+        opacity: 1;
+    }
+}

@@ -7,6 +7,7 @@ import About from "../components/about"
 import Portfolio from "../components/portfolio"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
+import SocialMedia from "../components/socialMedia"
 
 export default () => {
   return (
@@ -28,6 +29,7 @@ export default () => {
       <Portfolio />
       <Contact />
       <Footer />
+      <SocialMedia />
     </div>
   )
 }
