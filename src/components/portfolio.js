@@ -28,6 +28,9 @@ export default () => (
           <div className={portfolioStyles.imagesStyle}>
             <img src={"/images/band-site.png"} alt="band site" />          
           </div>
+          <div className={portfolioStyles.imagesStyle}>
+            <img src={"/images/artgallery.png"} alt="art gallery" />
+          </div>
       </div>
   </div>
 )

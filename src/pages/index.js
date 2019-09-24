@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 // import Container from "../components/container"
-// import Header from "../components/header"
+import Header from "../components/header"
 import Home from "../components/home"
 import About from "../components/about"
 import Portfolio from "../components/portfolio"
@@ -20,13 +20,13 @@ export default () => {
                 async
                 defer></script>
       </Helmet>
-      {/* <Header /> */}
-      {/* <Container> */}
-        <Home />
-        <About />
-        <Portfolio />
-        <Contact />
-      {/* </Container> */}
+      {/* <Container>
+      </Container> */}
+      <Header />
+      <Home />
+      <About />
+      <Portfolio />
+      <Contact />
       <Footer />
     </div>
   )

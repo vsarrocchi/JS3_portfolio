@@ -10,7 +10,7 @@ export default () => (
               <img src={"/images/logo3.png"} alt="logo" />
             </div>
             <p>Hello! I'm</p>
-            <h1>Valesca Sarrocchi</h1>
+            <h1 className={homeStyles.title}>Valesca Sarrocchi</h1>
             <h2>FrontEnd Developer Student</h2>
           </div>
         </div>
