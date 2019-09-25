@@ -2,7 +2,7 @@ import React from "react"
 import portfolioStyles from "./portfolio.module.css"
 
 export default () => (
-  <div className="nav" className={portfolioStyles.portfolioContainer} id="portfolio">
+  <div className="section" className={portfolioStyles.portfolioContainer} id="portfolio">
       <h1 className={portfolioStyles.title}>Portfolio</h1>
       <div className={portfolioStyles.portfolioBox}>
           <div className={portfolioStyles.imageBox}>

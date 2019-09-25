@@ -2,7 +2,7 @@ import React from "react"
 import homeStyles from "./home.module.css"
 
 export default () => (
-    <div className="nav" className={homeStyles.homeContainer}>
+    <div id="home" className="section" data-section="home" className={homeStyles.homeContainer}>
       <div className={homeStyles.homeBox}>
         <div className={homeStyles.homeColumn1}>
           <div className={homeStyles.logo}>
@@ -11,7 +11,7 @@ export default () => (
           <div className={homeStyles.homeInfo}>
             {/* <p>Hello! I'm</p> */}
             <h1 className={homeStyles.title}>Valesca Sarrocchi</h1>
-            <h2>FrontEnd Developer Student</h2>
+            <h2 id="ml3">FrontEnd Developer Student</h2>
           </div>
         </div>
         <div className={homeStyles.homeColumn2}>

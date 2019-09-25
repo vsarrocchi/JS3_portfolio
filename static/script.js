@@ -43,6 +43,74 @@ function elementDistanceFromBottomOfViewport(el) {
     return window.innerHeight - rect.top;
 }
 
+// Wrap every letter in a span
+var textWrapper = document.querySelector('#ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({
+        loop: false
+    })
+    .add({
+        targets: '#ml3 .letter',
+        opacity: [0, 1],
+        easing: "easeInOutQuad",
+        duration: 2250,
+        delay: (el, i) => 50 * (i + 1)
+    });
+
+// animeringar i viewport
+function checkVisibility() {
+    let homeSection = document.querySelector("#home");
+    if (isElementInViewport(homeSection)) {
+        if (homeSection.dataset.hasAppeared == 'true') return;
+        else {
+            // Wrap every letter in a span
+            let textWrapper = document.querySelector('#ml3');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({
+                    loop: false
+                })
+                .add({
+                    targets: '#ml3 .letter',
+                    opacity: [0, 1],
+                    easing: "easeInOutQuad",
+                    duration: 2250,
+                    delay: (el, i) => 50 * (i + 1)
+                });
+
+            homeSection.dataset.hasAppeared = 'true';
+        }
+    } else {
+        homeSection.dataset.hasAppeared = 'false';
+    }
+}
+
+function isElementInViewport(el) {
+    let rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+if (window.addEventListener) {
+    addEventListener('DOMContentLoaded', checkVisibility, false);
+    addEventListener('load', checkVisibility, false);
+    addEventListener('scroll', checkVisibility, false);
+}
+
+
+
+
+
+
+
+
+
 // nav active
 // function addActiveLink() {
 //     let element = document.querySelectorAll('.nav');
@@ -132,14 +200,14 @@ function elementDistanceFromBottomOfViewport(el) {
 //     }
 // })
 
-const svgPath = document.querySelectorAll('.path');
+// const svgPath = document.querySelectorAll('.path');
 
-const svgText = anime({
-    targets: svgPath,
-    loop: true,
-    direction: 'alternate',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutSine',
-    duration: 700,
-    delay: (el, i) => { return i * 500 }
-});
+// const svgText = anime({
+//     targets: svgPath,
+//     loop: true,
+//     direction: 'alternate',
+//     strokeDashoffset: [anime.setDashoffset, 0],
+//     easing: 'easeInOutSine',
+//     duration: 700,
+//     delay: (el, i) => { return i * 500 }
+// });
