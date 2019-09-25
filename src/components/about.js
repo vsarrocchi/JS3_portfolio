@@ -13,7 +13,7 @@ export default () => {
 //   }
 // `)
 return (
-    <div className={aboutStyles.aboutContainer} id="about">
+    <div className="nav" className={aboutStyles.aboutContainer} id="about">
         {/* <h1>{data.site.siteMetadata.title}</h1> */}
         <div className={aboutStyles.aboutBox}>
             <div className={aboutStyles.profilImage}>

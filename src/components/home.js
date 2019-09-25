@@ -2,7 +2,7 @@ import React from "react"
 import homeStyles from "./home.module.css"
 
 export default () => (
-    <div className={homeStyles.homeContainer}>
+    <div className="nav" className={homeStyles.homeContainer}>
       <div className={homeStyles.homeBox}>
         <div className={homeStyles.homeColumn1}>
           <div className={homeStyles.logo}>

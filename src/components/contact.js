@@ -2,7 +2,7 @@ import React from "react"
 import contactStyles from "./contact.module.css"
 
 export default () => (
-    <div className={contactStyles.contactContainer} id="contact">
+    <div className="nav" className={contactStyles.contactContainer} id="contact">
         <div className={contactStyles.contactBox}>
             <div className={contactStyles.contactForm}>
                 <form>

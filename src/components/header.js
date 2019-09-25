@@ -8,7 +8,7 @@ const ListLink = props => (
   </li>
 )
   
-export default({ children }) => {
+export default() => {
     return (
         <div className={headerStyles.headerBox} id="main-header">
             <ul>
@@ -18,7 +18,6 @@ export default({ children }) => {
                 <ListLink to="/#portfolio">Portfolio</ListLink>
                 <ListLink to="/#contact">Contact</ListLink>
             </ul>
-            {children}
         </div>
     )
 }

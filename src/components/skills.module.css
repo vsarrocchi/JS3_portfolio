@@ -40,7 +40,7 @@
 
 .bar::before {
     content: attr(data-skill);
-    background-color: #f3b0ff;
+    /* background-color: #f3b0ff; */
     display: inline-block;
     padding: 5px 0 5px 10px;
     border-radius: inherit;

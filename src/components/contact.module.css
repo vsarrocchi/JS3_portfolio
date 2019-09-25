@@ -7,6 +7,7 @@
 
     .contactBox {
         background-color: #252628;
+        border: 1px solid white;
         clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
         display: flex;
         justify-content: center;

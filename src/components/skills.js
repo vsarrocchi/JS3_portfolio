@@ -3,7 +3,7 @@ import skillsStyles from "./skills.module.css"
 
 export default () => {
 return (
-    <div className={skillsStyles.container} id="skills">
+    <div className="nav" className={skillsStyles.container} id="skills">
         <div className={skillsStyles.box}>
             <h1 className={skillsStyles.title}>Skills</h1>
             <div className={skillsStyles.bar + ' ' + skillsStyles.learning} data-skill="jQuery"></div>
