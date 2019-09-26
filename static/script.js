@@ -21,161 +21,161 @@ $(document).ready(function () {
     });
 
 
-// parallax function
-function parallax() {
-    let el = document.querySelectorAll(".parallax")
-    for (let i = 0; i < el.length; i++) {
-        let direction = el[i].getAttribute("data-direction");
-        let mult = el[i].getAttribute("data-mult");
-        let distance = elementDistanceFromBottomOfViewport(el[i]);
-        el[i].style.transform = "translate" + direction + distance * mult + "px)";
-    }
-}
-
-if (window.addEventListener) {
-    addEventListener('DOMContentLoaded', parallax, false);
-    addEventListener('load', parallax, false);
-    addEventListener('scroll', parallax, false);
-}
-
-function elementDistanceFromBottomOfViewport(el) {
-    let rect = el.getBoundingClientRect();
-    return window.innerHeight - rect.top;
-}
-
-// home title animation
-var textWrapper = document.querySelector('#ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({
-        loop: false
-    })
-    .add({
-        targets: '#ml3 .letter',
-        opacity: [0, 1],
-        easing: "easeInOutQuad",
-        duration: 2250,
-        delay: (el, i) => 50 * (i + 1)
-    });
-
-function checkVisibility() {
-    let homeSection = document.querySelector("#home");
-    if (isElementInViewport(homeSection)) {
-        if (homeSection.dataset.hasAppeared == 'true') return;
-        else {
-            let textWrapper = document.querySelector('#ml3');
-            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-            anime.timeline({
-                    loop: false
-                })
-                .add({
-                    targets: '#ml3 .letter',
-                    opacity: [0, 1],
-                    easing: "easeInOutQuad",
-                    duration: 2250,
-                    delay: (el, i) => 50 * (i + 1)
-                });
-
-            homeSection.dataset.hasAppeared = 'true';
+    // parallax function
+    function parallax() {
+        let el = document.querySelectorAll(".parallax")
+        for (let i = 0; i < el.length; i++) {
+            let direction = el[i].getAttribute("data-direction");
+            let mult = el[i].getAttribute("data-mult");
+            let distance = elementDistanceFromBottomOfViewport(el[i]);
+            el[i].style.transform = "translate" + direction + distance * mult + "px)";
         }
-    } else {
-        homeSection.dataset.hasAppeared = 'false';
     }
-}
 
-if (window.addEventListener) {
-    addEventListener('DOMContentLoaded', checkVisibility, false);
-    addEventListener('load', checkVisibility, false);
-    addEventListener('scroll', checkVisibility, false);
-}
+    if (window.addEventListener) {
+        addEventListener('DOMContentLoaded', parallax, false);
+        addEventListener('load', parallax, false);
+        addEventListener('scroll', parallax, false);
+    }
 
-function checkForVisibility2() {
-    let aboutElement = document.querySelector(".scroll");
-    if (isElementInViewport(aboutElement)) {
-        if (aboutElement.dataset.hasAppeared == 'true') return;
-        else {
-            aboutElement.classList.add("aboutElementVisible");
-            aboutElement.dataset.hasAppeared = 'true';
+    function elementDistanceFromBottomOfViewport(el) {
+        let rect = el.getBoundingClientRect();
+        return window.innerHeight - rect.top;
+    }
+
+    // home title animation
+    var textWrapper = document.querySelector('#ml3');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+            loop: false
+        })
+        .add({
+            targets: '#ml3 .letter',
+            opacity: [0, 1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+            delay: (el, i) => 50 * (i + 1)
+        });
+
+    function checkVisibility() {
+        let homeSection = document.querySelector("#home");
+        if (isElementInViewport(homeSection)) {
+            if (homeSection.dataset.hasAppeared == 'true') return;
+            else {
+                let textWrapper = document.querySelector('#ml3');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                anime.timeline({
+                        loop: false
+                    })
+                    .add({
+                        targets: '#ml3 .letter',
+                        opacity: [0, 1],
+                        easing: "easeInOutQuad",
+                        duration: 2250,
+                        delay: (el, i) => 50 * (i + 1)
+                    });
+
+                homeSection.dataset.hasAppeared = 'true';
+            }
+        } else {
+            homeSection.dataset.hasAppeared = 'false';
         }
-    } else {
-        aboutElement.classList.remove("aboutElementVisible");
-        aboutElement.dataset.hasAppeared = 'false';
     }
-}
 
-if (window.addEventListener) {
-    addEventListener('DOMContentLoaded', checkForVisibility2, false);
-    addEventListener('load', checkForVisibility2, false);
-    addEventListener('scroll', checkForVisibility2, false);
-}
+    if (window.addEventListener) {
+        addEventListener('DOMContentLoaded', checkVisibility, false);
+        addEventListener('load', checkVisibility, false);
+        addEventListener('scroll', checkVisibility, false);
+    }
 
-function checkForVisibility3() {
-    let contactSection = document.querySelector('.ml6 .letters');
-    if (isElementInViewport(contactSection)) {
-        if (contactSection.dataset.hasAppeared == 'true') return;
-        else {
-            let textWrapper = document.querySelector('.ml6 .letters');
-            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-            anime.timeline({
-                    loop: false
-                })
-                .add({
-                    targets: '.ml6 .letter',
-                    translateY: ["1.1em", 0],
-                    translateZ: 0,
-                    duration: 750,
-                    delay: (el, i) => 50 * i
-                })
-
-            contactSection.dataset.hasAppeared = 'true';
+    function checkForVisibility2() {
+        let aboutElement = document.querySelector(".scroll");
+        if (isElementInViewport(aboutElement)) {
+            if (aboutElement.dataset.hasAppeared == 'true') return;
+            else {
+                aboutElement.classList.add("aboutElementVisible");
+                aboutElement.dataset.hasAppeared = 'true';
+            }
+        } else {
+            aboutElement.classList.remove("aboutElementVisible");
+            aboutElement.dataset.hasAppeared = 'false';
         }
-    } else {
-        contactSection.dataset.hasAppeared = 'false';
     }
-}
 
-if (window.addEventListener) {
-    addEventListener('DOMContentLoaded', checkForVisibility3, false);
-    addEventListener('load', checkForVisibility3, false);
-    addEventListener('scroll', checkForVisibility3, false);
-}
+    if (window.addEventListener) {
+        addEventListener('DOMContentLoaded', checkForVisibility2, false);
+        addEventListener('load', checkForVisibility2, false);
+        addEventListener('scroll', checkForVisibility2, false);
+    }
 
-// skills animation visibility
-// function checkForVisibility4() {
-//     let skillsElement = document.querySelector("#skillsTitle");
-//     // console.log(isElementInViewport(skillsElement));
-//     if (isElementInViewport(skillsElement)) {
-//         if (skillsElement.dataset.hasAppeared == 'true') return;
-//         else {
-//             // skillsElement.classList.add("skillsElementVisible");
-//             skillsElement.dataset.hasAppeared = 'true';
-//         }
-//     } else {
-//         // skillsElement.classList.remove("skillsElementVisible");
-//         skillsElement.dataset.hasAppeared = 'false';
-//     }
-// }
+    function checkForVisibility3() {
+        let contactSection = document.querySelector('.ml6 .letters');
+        if (isElementInViewport(contactSection)) {
+            if (contactSection.dataset.hasAppeared == 'true') return;
+            else {
+                let textWrapper = document.querySelector('.ml6 .letters');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-// if (window.addEventListener) {
-//     addEventListener('DOMContentLoaded', checkForVisibility4, false);
-//     addEventListener('load', checkForVisibility4, false);
-//     addEventListener('scroll', checkForVisibility4, false);
-// }
+                anime.timeline({
+                        loop: false
+                    })
+                    .add({
+                        targets: '.ml6 .letter',
+                        translateY: ["1.1em", 0],
+                        translateZ: 0,
+                        duration: 750,
+                        delay: (el, i) => 50 * i
+                    })
+
+                contactSection.dataset.hasAppeared = 'true';
+            }
+        } else {
+            contactSection.dataset.hasAppeared = 'false';
+        }
+    }
+
+    if (window.addEventListener) {
+        addEventListener('DOMContentLoaded', checkForVisibility3, false);
+        addEventListener('load', checkForVisibility3, false);
+        addEventListener('scroll', checkForVisibility3, false);
+    }
+
+    // skills animation visibility
+    // function checkForVisibility4() {
+    //     let skillsElement = document.querySelector("#skillsTitle");
+    //     // console.log(isElementInViewport(skillsElement));
+    //     if (isElementInViewport(skillsElement)) {
+    //         if (skillsElement.dataset.hasAppeared == 'true') return;
+    //         else {
+    //             // skillsElement.classList.add("skillsElementVisible");
+    //             skillsElement.dataset.hasAppeared = 'true';
+    //         }
+    //     } else {
+    //         // skillsElement.classList.remove("skillsElementVisible");
+    //         skillsElement.dataset.hasAppeared = 'false';
+    //     }
+    // }
+
+    // if (window.addEventListener) {
+    //     addEventListener('DOMContentLoaded', checkForVisibility4, false);
+    //     addEventListener('load', checkForVisibility4, false);
+    //     addEventListener('scroll', checkForVisibility4, false);
+    // }
 
 
-// element in viewport function
-function isElementInViewport(el) {
-    let rect = el.getBoundingClientRect();
+    // element in viewport function
+    function isElementInViewport(el) {
+        let rect = el.getBoundingClientRect();
 
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
 
 });
 //---------------------------------------------------------------------------------------------------

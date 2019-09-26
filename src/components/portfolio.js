@@ -9,7 +9,7 @@ export default () => (
             <span className={portfolioStyles.text}>
                 <h1>Thunder</h1>
             </span>
-            <figure>
+            <figure className={portfolioStyles.figureImage}>
                 <img src={"/images/artgallery.png"} alt="art gallery" />
             </figure>
           </a>
@@ -22,7 +22,7 @@ export default () => (
             <span className={portfolioStyles.text}>
                 <h1>Thunder</h1>
             </span>
-            <figure>
+            <figure className={portfolioStyles.figureImage}>
                 <img src={"/images/flexboxgrid.png"} alt="flexbox grid" />
             </figure>
           </a>
@@ -35,7 +35,7 @@ export default () => (
             <span className={portfolioStyles.text}>
                 <h1>Thunder</h1>
             </span>
-            <figure>
+            <figure className={portfolioStyles.figureImage}>
                 <img src={"/images/grafikverktig2.jpg"} alt="grafikverktig 2" />
             </figure>
           </a>
@@ -48,7 +48,7 @@ export default () => (
             <span className={portfolioStyles.text}>
                 <h1>Thunder</h1>
             </span>
-            <figure>
+            <figure className={portfolioStyles.figureImage}>
                 <img src={"/images/journal.png"} alt="php journal" />
             </figure>
           </a>
@@ -61,7 +61,7 @@ export default () => (
             <span className={portfolioStyles.text}>
                 <h1>Thunder</h1>
             </span>
-            <figure>
+            <figure className={portfolioStyles.figureImage}>
                 <img src={"/images/superhero.png"} alt="superhero" />
             </figure>
           </a>
@@ -74,7 +74,7 @@ export default () => (
             <span className={portfolioStyles.text}>
                 <h1>Thunder</h1>
             </span>
-            <figure>
+            <figure className={portfolioStyles.figureImage}>
                 <img src={"/images/webshop.png"} alt="webshop" />
             </figure>
           </a>
@@ -87,7 +87,7 @@ export default () => (
             <span className={portfolioStyles.text}>
                 <h1>Thunder</h1>
             </span>
-            <figure>
+            <figure className={portfolioStyles.figureImage}>
                 <img src={"/images/band-site.png"} alt="band site" />
             </figure>
           </a>
@@ -100,7 +100,7 @@ export default () => (
             <span className={portfolioStyles.text}>
                 <h1>Thunder</h1>
             </span>
-            <figure>
+            <figure className={portfolioStyles.figureImage}>
                 <img src={"/images/artgallery.png"} alt="art gallery" />
             </figure>
           </a>
