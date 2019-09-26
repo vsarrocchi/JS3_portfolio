@@ -1,7 +1,17 @@
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact i {
+    padding: 1rem 1rem;
+    color: #8B1ADC;
+}
+
 @media (min-width: 768px) {
     .contact {
-        display: flex;
         flex-direction: column;
+        justify-content: unset;
         margin: 15px 15px 15px 0;
         position: fixed;
         bottom: 0;
@@ -9,7 +19,6 @@
 
     .contact i {
         padding: 1rem 2rem;
-        color: #8B1ADC;
     }
 
     .contact i:hover {
