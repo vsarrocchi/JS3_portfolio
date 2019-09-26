@@ -61,7 +61,7 @@ h3 {
 
 /* about */
 .profilImage {
-    display: flex;
+    /* display: flex; */
     width: 50%;
     margin-top: 40px;
 }
@@ -142,6 +142,7 @@ figure {
     }
 
     .profilImage {
+        display: flex;
         width: 25%;
         margin-top: unset;
         padding-top: 10px; 

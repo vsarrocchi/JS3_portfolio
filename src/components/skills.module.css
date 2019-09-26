@@ -8,7 +8,7 @@
 }
 
 .box {
-    width: 60%;
+    width: 80%;
 }
 
 .title {
@@ -65,4 +65,10 @@
 .bar.expert::before {
     width: calc(100% - 10px);
     background-color: #FF4256;
+}
+
+@media (min-width: 768px) {
+    .box {
+        width: 60%;
+    }
 }
