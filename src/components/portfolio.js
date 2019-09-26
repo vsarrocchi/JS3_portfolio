@@ -35,7 +35,7 @@ export default () => (
           <a href="#" className={portfolioStyles.box}>
             <span className={portfolioStyles.text}>
                 <h1>Journal</h1>
-                <p>PHP/SQL/MySQL/HTML/CSS/Bootstrapp</p>
+                <p>PHP/SQL/MySQL/HTML/CSS</p>
             </span>
             <figure className={portfolioStyles.figureImage}>
                 <img src={"/images/journal.png"} alt="php journal" />
@@ -53,7 +53,7 @@ export default () => (
           <a href="https://lezcodeher.github.io/project-webshop/" className={portfolioStyles.box}>
             <span className={portfolioStyles.text}>
                 <h1>Life Hacks - Webshop</h1>
-                <p>JavaScript/jQuery/XML/AJAX/JSON/Bootstrapp</p>
+                <p>JavaScript/jQuery/XML/AJAX/JSON</p>
             </span>
             <figure className={portfolioStyles.figureImage}>
                 <img src={"/images/webshop.png"} alt="webshop" />
