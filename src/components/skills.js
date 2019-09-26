@@ -5,7 +5,7 @@ export default () => {
 return (
     <div className="section" className={skillsStyles.container} id="skills">
         <div className={skillsStyles.box}>
-            <h1 className={skillsStyles.title}>Skills</h1>
+            <h1 id="skillsTitle" className={skillsStyles.title}>Skills</h1>
             <div className={skillsStyles.bar + ' ' + skillsStyles.learning} data-skill="jQuery"></div>
             <div className={skillsStyles.bar + ' ' + skillsStyles.basic} data-skill="PHP"></div>
             <div className={skillsStyles.bar + ' ' + skillsStyles.intermediate} data-skill="JavaScript"></div>

@@ -87,7 +87,7 @@ h3 {
 .scroll {
     opacity: 0;
     transform: translateY(100px);
-    transition: all 1s ease-out;
+    transition: all 1s ease-in;
 
     width: 50%;
     padding: 20px;
@@ -99,6 +99,7 @@ h3 {
     transform: translateY(0);
 }
 
+/* portfolio zoom efect */
 figure {
     overflow: hidden;
 }

@@ -90,16 +90,18 @@ if (window.addEventListener) {
     addEventListener('scroll', checkVisibility, false);
 }
 
-// about text 
 function checkForVisibility2() {
-    var aboutElement = document.querySelector(".scroll");
-    // homeElement.forEach(function (header) {
+    let aboutElement = document.querySelector(".scroll");
     if (isElementInViewport(aboutElement)) {
-        aboutElement.classList.add("aboutElementVisible");
+        if (aboutElement.dataset.hasAppeared == 'true') return;
+        else {
+            aboutElement.classList.add("aboutElementVisible");
+            aboutElement.dataset.hasAppeared = 'true';
+        }
     } else {
         aboutElement.classList.remove("aboutElementVisible");
+        aboutElement.dataset.hasAppeared = 'false';
     }
-    // });
 }
 
 if (window.addEventListener) {
@@ -107,21 +109,6 @@ if (window.addEventListener) {
     addEventListener('load', checkForVisibility2, false);
     addEventListener('scroll', checkForVisibility2, false);
 }
-
-// contact title
-// let textWrapperContact = document.querySelector('.ml6 .letters');
-// textWrapperContact.innerHTML = textWrapperContact.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-// anime.timeline({
-//         loop: false
-//     })
-//     .add({
-//         targets: '.ml6 .letter',
-//         translateY: ["1.1em", 0],
-//         translateZ: 0,
-//         duration: 750,
-//         delay: (el, i) => 50 * i
-//     })
 
 function checkForVisibility3() {
     let contactSection = document.querySelector('.ml6 .letters');
@@ -155,6 +142,30 @@ if (window.addEventListener) {
     addEventListener('scroll', checkForVisibility3, false);
 }
 
+// skills animation visibility
+// function checkForVisibility4() {
+//     let skillsElement = document.querySelector("#skillsTitle");
+//     // console.log(isElementInViewport(skillsElement));
+//     if (isElementInViewport(skillsElement)) {
+//         if (skillsElement.dataset.hasAppeared == 'true') return;
+//         else {
+//             // skillsElement.classList.add("skillsElementVisible");
+//             skillsElement.dataset.hasAppeared = 'true';
+//         }
+//     } else {
+//         // skillsElement.classList.remove("skillsElementVisible");
+//         skillsElement.dataset.hasAppeared = 'false';
+//     }
+// }
+
+// if (window.addEventListener) {
+//     addEventListener('DOMContentLoaded', checkForVisibility4, false);
+//     addEventListener('load', checkForVisibility4, false);
+//     addEventListener('scroll', checkForVisibility4, false);
+// }
+
+
+// element in viewport function
 function isElementInViewport(el) {
     let rect = el.getBoundingClientRect();
 
@@ -170,7 +181,7 @@ function isElementInViewport(el) {
 
 
 
-
+//---------------------------------------------------------------------------------------------------
 
 // nav active
 // function addActiveLink() {
