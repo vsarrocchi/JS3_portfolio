@@ -19,7 +19,7 @@ $(document).ready(function () {
         }
         position = scroll;
     });
-});
+
 
 // parallax function
 function parallax() {
@@ -177,10 +177,7 @@ function isElementInViewport(el) {
     );
 }
 
-
-
-
-
+});
 //---------------------------------------------------------------------------------------------------
 
 // nav active
