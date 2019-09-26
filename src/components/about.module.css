@@ -1,6 +1,5 @@
 .aboutContainer {
     min-height: 100vh;
-
 }
 
 .aboutBox {
@@ -13,62 +12,18 @@
     align-items: center;
 }
 
-.profilImage {
-    display: flex;
-    width: 50%;
-    margin-top: 40px;
-}
-
-.profilImage img {
-    border-radius: 500px;
-    width: 100%;
-    filter: grayscale();
-}
-
-.paragraph {
-    line-height: 1.5em;
-}
-
 .title {
     font-size: 40px;
     margin-bottom: 30px;
     color: #8B1ADC;
 }
-
-.text {
-    width: 100%;
-    padding: 20px;
-    margin: 20px;
+.paragraph {
+    line-height: 1.5em;
 }
 
 @media (min-width: 768px) {
     .aboutBox {
         width: 80%;
         flex-direction: row;
-        clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
     }
-
-    .profilImage {
-        width: 25%;
-        margin-top: unset;
-    }
-
-    /* .profilImage img {
-        border-radius: 500px;
-        width: 100%;
-    } */
-
-    .text {
-        width: 50%;
-    }
-
-    /* .title {
-        font-size: 40px;
-        margin-bottom: 30px;
-        color: #8B1ADC;
-    }
-
-    .paragraph {
-        line-height: 1.5em;
-    } */
 }

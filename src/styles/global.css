@@ -11,16 +11,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /* color: #333; */
     color: #373636;
     font-family: 'Quicksand', sans-serif;
     background-color: #F2EFE8;
-    /* background-color: #252628; */
-    /* background: linear-gradient(to right, #F2EFE8 0%, #fff 100%); */
-    /* background-color: #8B1ADC; */
-    /* background-color: #8B1ADC; */
-    /* background-color: #E7E7E5; */
-    /* background-color: #373636; */
 }
 
 ul {
@@ -66,20 +59,23 @@ h3 {
     color: red !important;
 }
 
-/* about text*/
-.scroll {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: all 1s ease-in;
-
+/* about */
+.profilImage {
+    display: flex;
     width: 50%;
-    padding: 20px;
-    margin: 20px;
+    margin-top: 40px;
 }
 
-.aboutElementVisible {
-    opacity: 1;
-    transform: translateY(0);
+.profilImage img {
+    border-radius: 500px;
+    width: 100%;
+    filter: grayscale();
+}
+
+.text {
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
 }
 
 /* portfolio zoom efect */
@@ -143,6 +139,20 @@ figure {
 
     #nav {
         display: flex;
+    }
+
+    .profilImage {
+        width: 25%;
+        margin-top: unset;
+        padding-top: 10px; 
+        position: relative;
+        top: -250px;
+    }
+    
+    .text {
+        width: 50%;
+        position: relative;
+        top: -150px;
     }
     
 }

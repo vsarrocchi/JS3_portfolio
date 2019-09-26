@@ -66,25 +66,30 @@ $(document).ready(function () {
         addEventListener('scroll', checkVisibility, false);
     }
 
-    // function checkForVisibility2() {
-    //     let aboutElement = document.querySelector(".scroll");
-    //     if (isElementInViewport(aboutElement)) {
-    //         if (aboutElement.dataset.hasAppeared == 'true') return;
-    //         else {
-    //             aboutElement.classList.add("aboutElementVisible");
-    //             aboutElement.dataset.hasAppeared = 'true';
-    //         }
-    //     } else {
-    //         aboutElement.classList.remove("aboutElementVisible");
-    //         aboutElement.dataset.hasAppeared = 'false';
-    //     }
-    // }
+    // about parallax
+    function parallax() {
+        if (screen.width >= 768) {
+            let el = document.querySelectorAll(".parallax")
+            for (let i = 0; i < el.length; i++) {
+                let direction = el[i].getAttribute("data-direction");
+                let mult = el[i].getAttribute("data-mult");
+                let distance = elementDistanceFromBottomOfViewport(el[i]);
+                el[i].style.transform = "translate" + direction + distance * mult + "px)";
+            }
+        }
+    }
 
-    // if (window.addEventListener) {
-    //     addEventListener('DOMContentLoaded', checkForVisibility2, false);
-    //     addEventListener('load', checkForVisibility2, false);
-    //     addEventListener('scroll', checkForVisibility2, false);
-    // }
+    if (window.addEventListener) {
+        addEventListener('DOMContentLoaded', parallax, false);
+        addEventListener('load', parallax, false);
+        addEventListener('scroll', parallax, false);
+    }
+
+    // DistanceFromBottom
+    function elementDistanceFromBottomOfViewport(el) {
+        let rect = el.getBoundingClientRect();
+        return window.innerHeight - rect.top;
+    }
 
     function checkForVisibility3() {
         let contactSection = document.querySelector('.ml6 .letters');
