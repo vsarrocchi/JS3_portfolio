@@ -1,125 +1,139 @@
-@media (min-width: 768px) {
-    .contactContainer {
-        /* border: 1px solid black; */
-        /* padding: 40px 0; */
-        min-height: 100vh;
-    }
+.contactContainer {
+    min-height: 100vh;
+}
 
+.contactBox {
+    background-color: #252628;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactForm form {
+    width: 90%;
+}
+
+.row {
+    display: flex;
+}
+
+.input1,
+.input2,
+.input3,
+.textArea {
+    padding: 14px;
+    font-size: 17px;
+    font-weight: lighter;
+    border: none;
+    background-color: #F2EFE8;
+}
+
+.input1,
+.input2 {
+    width: 50%;
+}
+
+.input1 {
+    margin-right: 8px;
+}
+
+.input3 {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.textArea {
+    width: 100%;
+    height: 10rem;
+    margin-top: 8px;
+}
+
+.submitBtn {
+    float: right;
+    background-color: #8B1ADC;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.submitBtn {
+    transition: all 0.3s ease-in-out;
+}
+
+.submitBtn::after {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.submitBtn:hover {
+    transform: scale(1.07, 1.07);
+}
+
+.submitBtn:hover::after {
+    opacity: 1;
+}
+
+.contactMap {
+    display: flex;
+    width: 90%;
+    height: 350px;
+    margin-bottom: 50px;
+}
+
+.contactMap iframe {
+    width: 100%;
+    border: none;
+}
+
+/* form input animering */
+.input {
+    border: 0;
+    border-radius: 0;
+    transition: transform 0.7s ease-in-out;
+    border-bottom: 5px solid #F2EFE8;
+    transition: all 0.3s ease-out;
+}
+
+.input:hover {
+    background-color: #f5f5f5;
+    border-bottom: 5px solid #8B1ADC;
+}
+
+.input:focus {
+    background-color: #fff;
+    outline: 0;
+    border-bottom: 5px solid #8B1ADC;
+}
+
+@media (min-width: 768px) {
     .contactBox {
-        background-color: #252628;
-        border: 1px solid white;
+        flex-direction: row;
+        padding: 0;
         clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .contactForm {
         width: 45%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .contactForm form {
         width: 70%;
     }
 
-    .row {
-        display: flex;
-    }
-
-    .input1,
-    .input2,
-    .input3,
-    .textArea {
-        padding: 14px;
-        font-size: 17px;
-        font-weight: lighter;
-        border: none;
-        background-color: #F2EFE8;
-
-        /* transition: transform 0.7s ease-in-out;
-        border-bottom: 2px solid #ddd;
-        transition: all 0.3s ease-out; */
-    }
-
-    .input1,
-    .input2 {
-        width: 50%;
-    }
-
-    .input1 {
-        margin-right: 8px;
-    }
-
-    .input3 {
-        width: 100%;
-        margin-top: 8px;
-    }
-
-    .textArea {
-        width: 100%;
-        height: 10rem;
-        margin-top: 8px;
-    }
-
-    .submitBtn {
-        float: right;
-        background-color: #8B1ADC;
-        color: white;
-        padding: 12px;
-        border-radius: 5px;
-        font-weight: lighter;
-        letter-spacing: 3px;
-        margin-top: 8px;
-        cursor: pointer;
-    }
-
-    .submitBtn {
-        transition: all 0.3s ease-in-out;
-    }
-
-    .submitBtn::after {
-        transition: opacity 0.3s ease-in-out;
-    }
-
-    .submitBtn:hover {
-        transform: scale(1.07, 1.07);
-    }
-
-    .submitBtn:hover::after {
-        opacity: 1;
-    }
-
     .contactMap {
-        display: flex;
         width: 55%;
         height: 100vh;
-    }
-
-    .contactMap iframe {
-        width: 100%;
-        border: none;
-    }
-
-    /* form input animering */
-    .input {
-        border: 0;
-        border-radius: 0;
-        transition: transform 0.7s ease-in-out;
-        border-bottom: 5px solid #F2EFE8;
-        transition: all 0.3s ease-out;
-    }
-
-    .input:hover {
-        background-color: #f5f5f5;
-        border-bottom: 5px solid #8B1ADC;
-    }
-
-    .input:focus {
-        background-color: #fff;
-        outline: 0;
-        border-bottom: 5px solid #8B1ADC;
     }
 }

@@ -15,7 +15,7 @@ export default () => (
           </div>
         </div>
         <div className={homeStyles.homeColumn2}>
-            <img src={"/images/home-image-2.png"} alt="home" />
+            <img src={"/images/homepage.png"} alt="home" />
         </div>
       </div>
     </div>

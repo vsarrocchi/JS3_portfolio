@@ -1,31 +1,95 @@
 /* mobil layout */
-.header {
+.headerBox {
     /* border: 1px solid black; */
-    display: none;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    opacity: 0.7;
+    height: 3rem;
+    background-color: #252628;
 }
+
+.mobilNav {
+    margin-left: 1rem;
+}
+
+.headerBox ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    background: rgba(7, 7, 7, 0.5);
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.headerBox li a {
+        color: white;
+        margin: 0;
+        padding: 0;
+}
+
+/* .contact {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    z-index: 11;
+    margin: 5px;
+}
+
+a {
+    color: #3d3d3d;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.fa-linkedin {
+    font-size: 27px;
+    opacity: 0.6;
+    padding: 7px;
+}
+
+.fa-github {
+    font-size: 25px;
+    opacity: 0.6;
+    padding: 7px;
+}
+
+.fa-envelope {
+    font-size: 24px;
+    opacity: 0.6;
+    padding: 7px;
+} */
 
 /* desktop layout */
 @media (min-width: 768px) {
     .headerBox {
         display: flex;
         justify-content: center;
-        width: 100%;
+        align-items: unset;
+        height: unset;
         padding: 10px;
-        position: fixed;
-        top: 0;
-        z-index: 10;
         background-color: #252628;
-        opacity: 0.7;
-        /* background-color: #F2EFE8; */
-        /* background-color: #131415; */
-        /* background-color: #38393B;
-        opacity: 0.7; */
-        /* box-shadow: 0px 3px 4px 0px #b1aeae; */
     }
 
     .headerBox ul {
         display: flex;
-        align-items: center;
+        flex-direction: row;
+        /* align-items: center; */
+        position: unset;
+        width: unset;
+        margin: unset;
+        padding: unset;
+        background: unset;
     }
 
     .headerBox ul li {
@@ -55,9 +119,13 @@
         transform: scaleX(0);
         transition: all 0.3s ease-in-out 0s;
     }
-    
+
     .headerBox ul li a:hover:before {
         visibility: visible;
         transform: scaleX(1);
-      }
+    }
+
+    .mobilNav {
+        margin-left: none;
+    }
 }
