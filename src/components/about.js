@@ -10,7 +10,7 @@ return (
             </div>
             <div className="parallax text" data-mult="0.3" data-direction="Y(">
                 <h1 className={aboutStyles.title}>About me</h1>
-                <h3 className={aboutStyles.paragraph}>Maecenas tincidunt aliquet enim et facilisis. Aliquam non tellus metus. Vivamus eget euismod justo. Donec eu dolor sit amet urna pellentesque commodo vitae et metus. In at dignissim nisi, eget consequat libero. Pellentesque mauris orci, ultrices sit amet mattis a, semper ac nulla. Sed sem sapien, posuere et maximus non, suscipit sit amet est. Mauris non nunc nibh.</h3>
+                <h3 className={aboutStyles.paragraph}>I am a FrontEnd developer student at Nackademin in Stockholm who is currently looking for an internship. I have just finished the first year of the program. During this time I gained experience working with JavaScript, jQuery, JSON, HTML, CSS, Git, GitHub, Bootstrap, Sass, PHP, SQL, WordPress, Photoshop and Illustrator, among other skills.</h3>
             </div>
         </div>
     </div>

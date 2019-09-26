@@ -21,9 +21,6 @@ export default () => (
                 </form>
             </div>
             <div className={contactStyles.contactMap} id="map">
-                {/* <iframe title="sverige karta" 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130266.39963613081!2d17.841971349579072!3d59.32606681413215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1ssv!2sse!4v1569127515725!5m2!1ssv!2sse">
-                </iframe> */}
             </div>
         </div>
     </div>

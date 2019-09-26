@@ -9,7 +9,6 @@ export default () => (
               <img src={"/images/logo4.png"} alt="logo" />
           </div>
           <div className={homeStyles.homeInfo}>
-            {/* <p>Hello! I'm</p> */}
             <h1 className={homeStyles.title}>Valesca Sarrocchi</h1>
             <h2 id="ml3">FrontEnd Developer Student</h2>
           </div>
