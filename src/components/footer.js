@@ -6,7 +6,7 @@ export default({ children }) => {
     return (
         <div className={footerStyles.footer}>
             <div>
-                <Link to="/" className={footerStyles.scrollTop}>
+                <Link to="/#" className={footerStyles.scrollTop}>
                     <i className="fas fa-angle-up"></i>
                 </Link>
             </div>
