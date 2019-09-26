@@ -15,4 +15,27 @@
     .contact i:hover {
         opacity: 1;
     }
+
+    .box {
+        position: relative;
+        display: inline-block;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .box::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .box:hover {
+        transform: scale(1.2, 1.2);
+    }
+
+    .box:hover::after {
+        opacity: 1;
+    }
 }

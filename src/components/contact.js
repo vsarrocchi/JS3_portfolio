@@ -6,7 +6,11 @@ export default () => (
         <div className={contactStyles.contactBox}>
             <div className={contactStyles.contactForm}>
                 <form>
-                    <h1 className={contactStyles.title}>Contact me</h1>
+                    <h1 className="ml6 title">
+                        <span className="text-wrapper">
+                            <span className="letters">Contact me</span>
+                        </span>
+                    </h1>
                     <div className={contactStyles.row}>
                         <input className={contactStyles.input1} placeholder="Name" type="text" name="name" /> 
                         <input className={contactStyles.input2} placeholder="Email" type="email" name="email" />

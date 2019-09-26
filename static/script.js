@@ -43,7 +43,7 @@ function elementDistanceFromBottomOfViewport(el) {
     return window.innerHeight - rect.top;
 }
 
-// Wrap every letter in a span
+// home title animation
 var textWrapper = document.querySelector('#ml3');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -58,13 +58,11 @@ anime.timeline({
         delay: (el, i) => 50 * (i + 1)
     });
 
-// animeringar i viewport
 function checkVisibility() {
     let homeSection = document.querySelector("#home");
     if (isElementInViewport(homeSection)) {
         if (homeSection.dataset.hasAppeared == 'true') return;
         else {
-            // Wrap every letter in a span
             let textWrapper = document.querySelector('#ml3');
             textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -86,6 +84,77 @@ function checkVisibility() {
     }
 }
 
+if (window.addEventListener) {
+    addEventListener('DOMContentLoaded', checkVisibility, false);
+    addEventListener('load', checkVisibility, false);
+    addEventListener('scroll', checkVisibility, false);
+}
+
+// about text 
+function checkForVisibility2() {
+    var aboutElement = document.querySelector(".scroll");
+    // homeElement.forEach(function (header) {
+    if (isElementInViewport(aboutElement)) {
+        aboutElement.classList.add("aboutElementVisible");
+    } else {
+        aboutElement.classList.remove("aboutElementVisible");
+    }
+    // });
+}
+
+if (window.addEventListener) {
+    addEventListener('DOMContentLoaded', checkForVisibility2, false);
+    addEventListener('load', checkForVisibility2, false);
+    addEventListener('scroll', checkForVisibility2, false);
+}
+
+// contact title
+// let textWrapperContact = document.querySelector('.ml6 .letters');
+// textWrapperContact.innerHTML = textWrapperContact.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+// anime.timeline({
+//         loop: false
+//     })
+//     .add({
+//         targets: '.ml6 .letter',
+//         translateY: ["1.1em", 0],
+//         translateZ: 0,
+//         duration: 750,
+//         delay: (el, i) => 50 * i
+//     })
+
+function checkForVisibility3() {
+    let contactSection = document.querySelector('.ml6 .letters');
+    if (isElementInViewport(contactSection)) {
+        if (contactSection.dataset.hasAppeared == 'true') return;
+        else {
+            let textWrapper = document.querySelector('.ml6 .letters');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({
+                    loop: false
+                })
+                .add({
+                    targets: '.ml6 .letter',
+                    translateY: ["1.1em", 0],
+                    translateZ: 0,
+                    duration: 750,
+                    delay: (el, i) => 50 * i
+                })
+
+            contactSection.dataset.hasAppeared = 'true';
+        }
+    } else {
+        contactSection.dataset.hasAppeared = 'false';
+    }
+}
+
+if (window.addEventListener) {
+    addEventListener('DOMContentLoaded', checkForVisibility3, false);
+    addEventListener('load', checkForVisibility3, false);
+    addEventListener('scroll', checkForVisibility3, false);
+}
+
 function isElementInViewport(el) {
     let rect = el.getBoundingClientRect();
 
@@ -96,14 +165,6 @@ function isElementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
-
-if (window.addEventListener) {
-    addEventListener('DOMContentLoaded', checkVisibility, false);
-    addEventListener('load', checkVisibility, false);
-    addEventListener('scroll', checkVisibility, false);
-}
-
-
 
 
 
