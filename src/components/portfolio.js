@@ -74,7 +74,7 @@ export default () => (
                 <p>Gatsby/Netlify/JavaScript/CSS</p>
             </span>
             <figure className={portfolioStyles.figureImage}>
-                <img src={"/images/js3_portfolio.png"} alt="portfolio" />
+                <img src={"/images/old_portfolio.png"} alt="portfolio" />
             </figure>
           </a>
       </div>
