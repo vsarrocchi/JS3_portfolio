@@ -18,7 +18,7 @@ export default () => {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
         <script src="/script.js"></script>
         <script src="/google-map.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOb0lovvkv92GzXlph-xP8f00lE9apfG8&callback=initMap" 
+        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" 
                 async
                 defer></script>
       </Helmet>
